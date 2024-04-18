@@ -1,0 +1,65 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    padding-left:250px ;
+    padding-top: 50;
+  }
+  
+  .custom-radio {
+    width: 30%;
+
+  }
+  
+  .custom-image {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .custom-image__img {
+    max-width: 300px; /* Adjust the maximum width of the image */
+    max-height: 300px;
+    height: auto;
+    margin-bottom: 20px; /* Add margin below the image */
+  }
+  
+  .custom-button {
+    padding: 15px 30px; /* Increase padding for larger button */
+    background-color: #4B208C;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Increase border radius for rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for button text */
+  }
+  
+  .custom-button:hover {
+    background-color: #2c1056;
+  }
+  
+  .custom-radio input[type="radio"] {
+    display: none;
+  }
+  
+  .custom-radio input[type="radio"] + label {
+  font-size: 150%;
+  display: inline-block;
+  padding: 30px 30px; /* Adjust padding for larger radio buttons */
+  background-color: #EAE6F5;
+  border-radius: 10px; /* Increase border radius for rounded corners */
+  margin-bottom: 30px; /* Increase margin between radio buttons */
+  cursor: pointer;
+}
+  
+  .custom-radio input[type="radio"]:checked + label {
+    background-color: #4B208C;
+    color: #fff;
+  }
+  
+  .bgcolorforquizzes{
+    background-color: #F3F0F6;
+  }
+
