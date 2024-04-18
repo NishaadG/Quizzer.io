@@ -695,7 +695,7 @@ a:focus {
     width: 382px;
     overflow:hidden ;
     margin: 20 0 0 450px;
-    padding: 80px;
+    padding: 40px 80px 80px 40px;
     background:#4B208C;
     border-radius: 15px;
     position: absolute;
@@ -709,7 +709,7 @@ a:focus {
   width: 382px;
     overflow:hidden ;
     margin: 20 0 0 450px;
-    padding: 60px;
+    padding: 20px 60px 60px 20px;
     background:#4B208C;
     border-radius: 15px;
     position: absolute;
