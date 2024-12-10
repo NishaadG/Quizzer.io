@@ -1,65 +1,93 @@
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 20px;
-    padding-left:250px ;
-    padding-top: 50;
-  }
-  
-  .custom-radio {
-    width: 30%;
+/* General Styles */
+.quiz-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
 
-  }
-  
-  .custom-image {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .custom-image__img {
-    max-width: 300px; /* Adjust the maximum width of the image */
-    max-height: 300px;
-    height: auto;
-    margin-bottom: 20px; /* Add margin below the image */
-  }
-  
-  .custom-button {
-    padding: 15px 30px; /* Increase padding for larger button */
-    background-color: #4B208C;
-    color: #fff;
-    border: none;
-    border-radius: 10px; /* Increase border radius for rounded corners */
-    cursor: pointer;
-    font-size: 16px; /* Increase font size for button text */
-  }
-  
-  .custom-button:hover {
-    background-color: #2c1056;
-  }
-  
-  .custom-radio input[type="radio"] {
-    display: none;
-  }
-  
-  .custom-radio input[type="radio"] + label {
-  font-size: 150%;
+.radio-section {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.radio-section label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.image-section {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-button {
   display: inline-block;
-  padding: 30px 30px; /* Adjust padding for larger radio buttons */
-  background-color: #EAE6F5;
-  border-radius: 10px; /* Increase border radius for rounded corners */
-  margin-bottom: 30px; /* Increase margin between radio buttons */
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
 }
-  
-  .custom-radio input[type="radio"]:checked + label {
-    background-color: #4B208C;
-    color: #fff;
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  .quiz-wrapper {
+    flex-wrap: nowrap;
   }
-  
-  .bgcolorforquizzes{
-    background-color: #F3F0F6;
+
+  .radio-section {
+    flex: 1;
+    padding: 20px;
   }
+
+  .image-section {
+    flex: 1;
+    padding: 20px;
+  }
+}
+
+.popoutbutton input[type="radio"] {
+  display: none; /* Hide the radio input */
+}
+
+.popoutbutton {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  user-select: none; 
+}
+
+.popoutbutton:hover {
+  background-color: #d6d6d6;
+  transform: scale(1.03);
+}
+
+.popoutbutton input[type="radio"]:checked + span {
+  background-color:#5625a1 ; 
+  color: #fff;               
+  border: 2px solid #3f1a85; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+}
 
