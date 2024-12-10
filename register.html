@@ -1,114 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Quizzer.io</title>
 
-  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLv9wQZ2LfGwzGVrbHqnZWKiS3eIuTHBLa9cQrvRSjw&s"
-  type="image/x-icon">
-
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzLv9wQZ2LfGwzGVrbHqnZWKiS3eIuTHBLa9cQrvRSjw&s" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
 </head>
 
 <body class="sub_page">
 
-  <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/quizzer.ioquestionmarklogo.jpeg" alt="">
-            <span>
-              Quizzer.io
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="s-1"> </span>
-            <span class="s-2"> </span>
-            <span class="s-3"> </span>
-          </button>
+  <!-- Header Section -->
+  <header class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/quizzer.ioquestionmarklogo.jpeg" alt="">
+          <span>Quizzer.io</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="s-1"></span>
+          <span class="s-2"></span>
+          <span class="s-3"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="quizzes.html">Quizzes</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item active"><a class="nav-link" href="register.html">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header Section -->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="quizzes.html">Quizzes </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.html"> login </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="register.html"> register </a>
-                </li>
-              </ul>
+  <!-- Register Form Section -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5">
+        <div class="register-form bg-light p-4">
+          <h3 class="text-center">Register</h3>
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter username" required>
             </div>
-          </div>
-        </nav>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+            <div class="form-group">
+              <label for="password-confirm">Confirm Password</label>
+              <input type="password" class="form-control" id="password-confirm" placeholder="Confirm password" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Register</button>
+          </form>
+          <p class="text-center mt-3">
+            Already have an account? <a href="login.html">Login</a>
+          </p>
+        </div>
       </div>
-    </header>
-    <!-- end header section -->
+    </div>
   </div>
+  <!-- End Register Form Section -->
 
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
 
+</body>
 
-
-  <!-- register section -->
-  <div class="register">
-    <p>
-      <label for="username"><b>Username</b></label>
-      <input type="text" id="username" name="username" required placeholder="Enter username">
-  </p>
-  <p>
-      <label for="email"><b>Email</b></label><br>
-      <input type="email" id="email" name="email" required placeholder="Enter email">
-  </p>
-  <p>
-      <label for="password"><b>Password</b></label>
-      <input type="password" id="password" name="password" required placeholder="Enter password">
-  </p>
-  <p>
-      <label for="password-confirm"><b>Confirm Password</b></label>
-      <input type="password" id="password-confirm" name="password-confirm" required placeholder="Confirm password">
-
-  </p>
-  <p>
-      <label for="phone"><b>Phone Number:</b></label>
-           <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number"><br>
-
-  </p>
-  <p>
-      <input type="submit" onclick="window.location='index.html';" action="catalogue.html" value="Register" id="submit">
-  </p>
-  <p class="link">
-      Already have an account? <a href="login.html">Login</a>
-  </p>
-</form>
 </html>
